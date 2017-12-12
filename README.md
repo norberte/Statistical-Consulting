@@ -30,7 +30,9 @@ Doc2Vec_selfTrained.py -i "../../../data/conference.csv" -c 2
 5.	WMD: Navigate to /src/data_analysis/pythonCode/ and run the command:
 WMD.py -i "../../../data/conference.csv" -c 2 –m "../languageModels/WMD_model_withGoogleNews_W2V.bin"
 6.	InferSent (Only running on Linux or OSX, because of library limitations (i.e.: pytorch)):
-Run main.py from the /src/data_analysis/pythonCode/InferSent directory, on a Linux or OSX operating system, after pytorch was configured. Adjust file path inside main.py, if needed.
+a.	Go inside /src/data_analysis/pythonCode/InferSent/encoder and unzip the glove.840B.300d.zip file.
+b.	Run main.py inside the InferSent folder from a Linux or OSX operating system, after pytorch was configured. Adjust file path inside main.py, if needed.
+
 
 # Abstract Clustering Process:
 1.	Set R working directory to the root directory of this project’s directory, i.e. SSC Consulting, so for example run the R command “setwd("C:/Users/Norbert/Desktop/SSC consulting")”.
