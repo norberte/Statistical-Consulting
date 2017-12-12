@@ -1,0 +1,15 @@
+For everything, except Infersent:
+Python 2.7
+
+python libraries:
+gensim
+nltk
+stopwords
+numpy
+pyemd
+
+Just only for InferSent:
+numpy
+pytorch, which can only be installed on Linux or OSX (see http://pytorch.org/ and https://github.com/pytorch/pytorch#installation)
+
+Thus, InferSent can't run on Windows operation systems at all, because of pytorch's limitations.
