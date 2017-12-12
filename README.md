@@ -37,3 +37,5 @@ Run main.py from the /src/data_analysis/pythonCode/InferSent directory, on a Lin
 2.	Rerun whichever model’s clustering analysis. Careful with the script, some of it is just exploring the data, to decide on the proper number of clusters within the data.
 3.	In order to perform cross validation or stability checking, go to tests/data_analysis/clustering_R and run Clustering Analysis Validation using CV.R or Clustering Analysis Validation using clValid package.R
 
+Note that the InferSent directory inside /src/data_analysis/pythonCode/ was cloned from https://github.com/facebookresearch/InferSent, then added main.py to run my own analysis using the InferSent model. I did not write the InferSent code, and I do not own any intelectual property from it. It was only used for educational purposes (i.e. Statistical Consulting course at UBCO)
+
