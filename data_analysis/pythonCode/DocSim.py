@@ -50,7 +50,7 @@ def trainDocSim(rawCSVFile, columnNumberForText):
 
     # writing the similarity matrix to a csv file
     modelName = "docSim_cleanAbstracts_lsi_t48"
-    simMatOutputFile = "../../../data/similarityMatrices/" + modelName + "_simMatrix.csv"
+    simMatOutputFile = "../../data/similarityMatrices/" + modelName + "_simMatrix.csv"
     with open(simMatOutputFile, 'w+') as file_vector:
         for i in range(0, len(similarityMatrix)):
             for j in range(0, len(similarityMatrix[i])):
@@ -90,7 +90,7 @@ def DocSim(rawCSVFile, columnNumberForText):
 
     # writing the similarity matrix to a csv file
     modelName = "docSim_cleanAbstracts_lsi_t48"
-    simMatOutputFile = "../../../data/similarityMatrices/" + modelName + "_simMatrix.csv"
+    simMatOutputFile = "../../data/similarityMatrices/" + modelName + "_simMatrix.csv"
     with open(simMatOutputFile, 'w+') as file_vector:
         for i in range(0, len(similarityMatrix)):
             for j in range(0, len(similarityMatrix[i])):
@@ -102,10 +102,10 @@ def DocSim(rawCSVFile, columnNumberForText):
     return similarityMatrix
 
 def test():
-    rawFile = "../../../data/conference.csv"
+    rawFile = "../../data/conference.csv"
     colNum = 2
     return DocSim(rawCSVFile = rawFile, columnNumberForText=colNum)
-    # or use this command to test-run it: DocSim.py -i "../../../data/conference.csv" -c 2
+    # or use this command to test-run it: DocSim.py -i "../../data/conference.csv" -c 2
 
 def main(argv):
     inputCSVFile = ''

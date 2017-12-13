@@ -41,7 +41,7 @@ def Doc2Vec(rawCSVFile, columnNumberForText, dim = default_size, iter = default_
     # writing the similarity matrix to a csv file
     modelPathBase = os.path.basename(modelPath)
     modelName = os.path.splitext(modelPathBase)[0]
-    simMatOutputFile = "../../../data/similarityMatrices/" + modelName + "_simMatrix.csv"
+    simMatOutputFile = "../../data/similarityMatrices/" + modelName + "_simMatrix.csv"
 
     with open(simMatOutputFile, 'w+') as file_vector:
         for i in range(0, len(similarityMatrix)):
@@ -54,10 +54,10 @@ def Doc2Vec(rawCSVFile, columnNumberForText, dim = default_size, iter = default_
     return similarityMatrix
 
 def test():
-    rawFile = "../../../data/conference.csv"
+    rawFile = "../../data/conference.csv"
     colNum = 2
     return Doc2Vec(rawCSVFile = rawFile, columnNumberForText=colNum)
-    # or use this command to test-run it: Doc2Vec_selfTrained.py -i "../../../data/conference.csv" -c 2
+    # or use this command to test-run it: Doc2Vec_selfTrained.py -i "../../data/conference.csv" -c 2
 
 def main(argv):
     inputCSVFile = ''

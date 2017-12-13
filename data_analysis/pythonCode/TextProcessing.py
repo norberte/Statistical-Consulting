@@ -57,7 +57,7 @@ def text_pre_processing(csvFile, columnNumberForText):
     # figure out path for the text corpus
     rawFilePathBase = os.path.basename(csvFile)
     rawFileName = os.path.splitext(rawFilePathBase)[0]
-    corpusPath = "../../../data/" + rawFileName + "_textCorpus.txt"
+    corpusPath = "../../data/" + rawFileName + "_textCorpus.txt"
 
     # write list of clean text documents to text corpus file
     with open(corpusPath, 'w') as f:
@@ -70,7 +70,7 @@ def text_pre_processing(csvFile, columnNumberForText):
     return results, corpusPath          # return a list of clean abstracts
 
 def test():
-    rawFile = "../../../data/conference.csv"
+    rawFile = "../../data/conference.csv"
     colNum = 2
     abstracts, corpusPath = text_pre_processing(csvFile=rawFile, columnNumberForText= colNum)
     return abstracts

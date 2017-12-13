@@ -22,7 +22,7 @@ def WMD(rawCSVFile, columnNumberForText, modelPath):
     # writing the similarity matrix to a csv file
     modelPathBase = os.path.basename(modelPath)
     modelName = os.path.splitext(modelPathBase)[0]
-    simMatOutputFile = "../../../data/similarityMatrices/" + modelName + "_simMatrix.csv"
+    simMatOutputFile = "../../data/similarityMatrices/" + modelName + "_simMatrix.csv"
     with open(simMatOutputFile, 'w+') as file_vector:
         for i in range(0, len(similarityMatrix)):
             for j in range(0, len(similarityMatrix[i])):
@@ -34,12 +34,12 @@ def WMD(rawCSVFile, columnNumberForText, modelPath):
     return similarityMatrix
 
 def test():
-    rawFile = "../../../data/conference.csv"
+    rawFile = "../../data/conference.csv"
     columnNumberForText = 2
     WMD_sim_modelPath = "../languageModels/WMD_model_withGoogleNews_W2V.bin"
 
     return WMD(rawFile, columnNumberForText, WMD_sim_modelPath)
-    # or use this command to test-run it: WMD.py -i "../../../data/conference.csv" -c 2 -m "../languageModels/WMD_model_withGoogleNews_W2V.bin"
+    # or use this command to test-run it: WMD.py -i "../../data/conference.csv" -c 2 -m "../languageModels/WMD_model_withGoogleNews_W2V.bin"
 
 
 def main(argv):

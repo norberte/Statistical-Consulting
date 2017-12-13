@@ -4,7 +4,7 @@ library(readr)
 library(mclust)
 library(cluster)
 
-docSim <- as.matrix(read_csv("data/similarityMatrices/apnews_doc2vec_simMatrix.csv", col_names = FALSE))
+docSim <- as.matrix(read_csv("../../data/similarityMatrices/apnews_doc2vec_simMatrix.csv", col_names = FALSE))
 dissimilarityMat = 1 - docSim
 
 # DIvisive ANAlysis Clustering ------------------------
@@ -13,7 +13,7 @@ plot(divClust)
 
 divClustResults <- cutree(as.hclust(divClust), h = 0.47)
 table(divClustResults)
-write.csv(divClustResults, file="data/clusterMemberships/doc2vec_wikiModel_divisive_membership.csv" )
+write.csv(divClustResults, file="../../data/clusterMemberships/doc2vec_wikiModel_divisive_membership.csv" )
 
 
 #agglomerative clustering 
@@ -22,7 +22,7 @@ plot(aggClust)
 
 aggClustResults <- cutree(as.hclust(aggClust), h = 0.45)
 table(aggClustResults)
-write.csv(aggClustResults, file="data/clusterMemberships/doc2vec_wikiModel_Agglomerative_membership.csv" )
+write.csv(aggClustResults, file="../../data/clusterMemberships/doc2vec_wikiModel_Agglomerative_membership.csv" )
 
 
 # Hierarchical clustering --- k = 15 or 30 ---------------------------------
@@ -30,7 +30,7 @@ clink <- hclust(dissimilarityMat, method="complete")
 plot(clink)
 
 cres <- cutree(clink, k = 3)
-write.csv(cres, file="data/clusterMemberships/doc2vec_hierarchical_membership.csv" )
+write.csv(cres, file="../../data/clusterMemberships/doc2vec_hierarchical_membership.csv" )
 
 table(cres)
 plot(cres)
@@ -53,7 +53,7 @@ maxCoreScatter <- 0.99
 minGap <- (1 - maxCoreScatter) * 3/4
 dynamicCut <- cutreeDynamic(clink, minClusterSize=5, method="hybrid", distM=as.matrix(docSim), deepSplit=4, maxCoreScatter=maxCoreScatter, minGap=minGap, maxAbsCoreScatter=NULL, minAbsGap=NULL)
 
-write.csv(dynamicCut, file="data/clusterMemberships/doc2vec_pretrained_dynamicTreeCut_k=3_membership.csv" )
+write.csv(dynamicCut, file="../../data/clusterMemberships/doc2vec_pretrained_dynamicTreeCut_k=3_membership.csv" )
 
 plot(docSim, col=cres)
 
@@ -68,20 +68,20 @@ summary(BIC)
 
 doc_mm<- Mclust(dissimilarityMat, G=2:30)
 summary(doc_mm)
-write.csv(doc_mm$classification, file="data/clusterMemberships/doc2vec_pretrained_mixtureModels_k=7_membership.csv" )
+write.csv(doc_mm$classification, file="../../data/clusterMemberships/doc2vec_pretrained_mixtureModels_k=7_membership.csv" )
 
 
 # k-means -----------------------------------------------
 clust_kmeans <- kmeans(docSim, 3, nstart=25)
 kmeans_membership <- clust_kmeans$cluster
-write.csv(kmeans_membership, file="data/clusterMemberships/doc2vec_pretrained_kMeans_k=3_membership.csv" )
+write.csv(kmeans_membership, file="../../data/clusterMemberships/doc2vec_pretrained_kMeans_k=3_membership.csv" )
 
 table(kmeans_membership)
 
 # Partitioning Around Medoids ----------------------------
 partition = pam(docSim, 3) # 3 clusters
 partitioning_membership_ = partition$clustering
-write.csv(partitioning_membership_, file="data/clusterMemberships/doc2vec_pretrained_cleanAbstracts_PartitioningAroundMedoids_k=3_membership.csv" )
+write.csv(partitioning_membership_, file="../../data/clusterMemberships/doc2vec_pretrained_cleanAbstracts_PartitioningAroundMedoids_k=3_membership.csv" )
 
 
 

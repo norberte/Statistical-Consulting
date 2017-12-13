@@ -1,0 +1,112 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+\documentclass{ssc-prog}
+\usepackage{amsmath,amsfonts}
+
+%\usepackage{absnotes} % already included by ssc-prog.cls
+\usepackage[sf]{titlesec}
+\usepackage{makeidx}
+\usepackage[svgnames]{xcolor}
+%\usepackage{url} % to provide for line wrapping in URLs with \url{...}
+%\usepackage{hyperref} % last package, to prevent overriding of its macros
+
+\DeclareMathOperator{\Cov}{Cov}
+
+%\includeonly{abstracts}
+
+\makeindex
+
+\pagestyle{plain}
+
+%%%%%%%%%% macros for local-arrangements.tex (from Patrick Brown, 2014)
+\usepackage{paracol}
+\newenvironment{fr}{
+ \switchcolumn
+\begin{otherlanguage}{francais}
+%\columnbreak
+ 
+\begin{rmfamily}
+}{
+\end{rmfamily}
+
+\end{otherlanguage}
+}
+\newcommand{\fra}[1]{{\rmfamily #1}}
+\newenvironment{biglist}{%
+\bigskip
+\hspace{3cm}\begin{minipage}{0.75\textwidth}%
+\begin{large}
+\begin{itemize}%
+}{%
+\end{itemize}
+
+\end{large}% 
+\end{minipage}%
+\bigskip
+}
+%%%%%%%%%%%% macros for SSC 2014 map.tex
+\usepackage{subcaption,float}
+\newcommand{\subfloat}[2][need a sub-caption]{\subcaptionbox{#1}{#2}}
+
+\usepackage{ctable}
+\newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
+\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
+
+%%%%%%%%%% end of macros for SSC 2014
+\usepackage{enumitem}
+\usepackage[colorlinks=true,urlcolor=DarkSlateGrey]{hyperref}
+%\usepackage{hyperref}
+
+\begin{document}
+
+\include{titlepage}
+
+\begingroup
+\thispagestyle{plain}
+\tableofcontents
+\endgroup
+
+\include{local-arrangements}
+
+% Use \BuildingAbbrevs to set building abbreviations for footer
+% of each page throughout the schedules.
+%\renewcommand{\BuildingAbbrevs}{\framebox[\textwidth]{%
+%BAC = Beveridge Arts Centre \hfill 
+%KCIC = K. C. Irving Centre}} 
+\renewcommand{\BuildingAbbrevs}{}
+
+
+
+\include{committees}
+
+\include{social}
+
+\pagestyle{headings}
+
+\include{sessions}
+
+% Set this if you want to see Abstract cross references.
+% Comment it out for the Print version.
+\renewcommand{\PrintVersion}{yes} % perhaps should be called 'FullVersion'
+
+\include{program}
+
+% Include this to include and index the abstracts
+% Comment it out for the Print version.
+\include{abstracts}
+
+\chead{}
+
+\renewcommand{\BuildingAbbrevs}{}
+
+\pagestyle{plain}
+\markboth{Author List \textbullet\ Liste des auteurs}{Author List \textbullet\ Liste des auteurs}
+\renewcommand{\indexname}{Author List \textbullet\ Liste des auteurs}
+\addcontentsline{toc}{chapter}{Author List \textbullet\ Liste des auteurs}%
+\printindex
+
+\include{map}  % for SSC 2015 print program only
+               % (add with pdftk for compact web version)
+
+\end{document}

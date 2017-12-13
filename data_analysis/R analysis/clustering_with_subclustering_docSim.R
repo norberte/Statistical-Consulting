@@ -4,12 +4,12 @@ library(readr)
 library(mclust)
 library(cluster)
 
-docSim <- as.matrix(read_csv("data/similarityMatrices/WMD_cleanAbstracts_simMatrix.csv", col_names = FALSE))
+docSim <- as.matrix(read_csv("../../data/similarityMatrices/docSim_cleanAbstracts_lsi_t48_simMatrix.csv", col_names = FALSE))
 dissimilarityMat = 1 - docSim
 
 ### Determining the number of clusters using various algorithms -----------
 
-# k-Means ---- k = 2 or 3 -------------
+# k-Means ---- k = 5-6 -------------
 clustore <- matrix(0, nrow=283, ncol=283)
 wsstore <- NULL
 for(i in 1:30){
@@ -21,7 +21,7 @@ for(i in 1:30){
 plot(1:30, wsstore, type="b", xlab="Number of Clusters",
      ylab="Within groups sum of squares")
 
-# mixture model-based clustering ---- k = 12 -------------
+# mixture model-based clustering ---- k = 7  -------------
 library(mclust)
 # Run the function to see how many clusters it finds to be optimal, set it to search for at least 1 model and up 30.
 d_clust <- Mclust(as.matrix(dissimilarityMat), G=2:30)
@@ -29,7 +29,7 @@ m.best <- dim(d_clust$z)[2]
 cat("model-based optimal number of clusters:", m.best, "\n")
 plot(d_clust)
 
-# Affinity Propagation clustering ---- k = 35  -------------
+# Affinity Propagation clustering ---- k = 38 -------------
 require(apcluster)
 d.apclus <- apcluster(negDistMat(r=2), x = dissimilarityMat)
 cat("affinity propogation optimal number of clusters:", length(d.apclus@clusters), "\n")
@@ -91,10 +91,11 @@ parallel_elbow(30, dissimilarityMat)
 
 
 ### first clustering using k = 10
+
 # Mixture model ----
 doc_mm<- Mclust(dissimilarityMat, G=2:30)
 summary(doc_mm)
-write.csv(doc_mm$classification, file="data/clusterMemberships/mainClusters/WMD_mixtureModels_k=12_membership.csv" )
+write.csv(doc_mm$classification, file="../../data/clusterMemberships/mainClusters/docSim_mixtureModels_k=7_membership.csv" )
 
 cluster1 <- dissimilarityMat[doc_mm$classification==1,doc_mm$classification==1]
 cluster2 <- dissimilarityMat[doc_mm$classification==2,doc_mm$classification==2]
@@ -103,26 +104,19 @@ cluster4 <- dissimilarityMat[doc_mm$classification==4,doc_mm$classification==4]
 cluster5 <- dissimilarityMat[doc_mm$classification==5,doc_mm$classification==5]
 cluster6 <- dissimilarityMat[doc_mm$classification==6,doc_mm$classification==6]
 cluster7 <- dissimilarityMat[doc_mm$classification==7,doc_mm$classification==7]
-cluster8 <- dissimilarityMat[doc_mm$classification==8,doc_mm$classification==8]
-cluster9 <- dissimilarityMat[doc_mm$classification==9,doc_mm$classification==9]
-cluster10 <- dissimilarityMat[doc_mm$classification==10,doc_mm$classification==10]
-cluster11 <- dissimilarityMat[doc_mm$classification==11,doc_mm$classification==11]
-cluster12 <- dissimilarityMat[doc_mm$classification==12,doc_mm$classification==12]
 
 clusterMembership <- NULL
 currentNumberOfClusters <- 0
 
 #Sub-clustering
-
 #cluster 1
 divClust <- diana(cluster1, diss = TRUE)
 plot(divClust)
 
-divClustResults <- cutree(as.hclust(divClust), k = 2)
+divClustResults <- cutree(as.hclust(divClust), k = 7)
 table(divClustResults)
 clusterMembership <- c(divClustResults, clusterMembership) 
-currentNumberOfClusters <- currentNumberOfClusters + 2   #update current number of clusters
-
+currentNumberOfClusters <- currentNumberOfClusters + 7   #update current number of clusters
 
 
 #cluster 2
@@ -131,9 +125,9 @@ plot(divClust2)
 
 divClustResults <- cutree(as.hclust(divClust2), k = 2)
 table(divClustResults)
+# offset the cluster number, so they don't overlap with the previous clusters
 clusterMembership <- c(clusterMembership, (divClustResults + currentNumberOfClusters)) 
 currentNumberOfClusters <- currentNumberOfClusters + 2
-
 
 
 
@@ -141,92 +135,44 @@ currentNumberOfClusters <- currentNumberOfClusters + 2
 divClust <- diana(cluster3, diss = TRUE)
 plot(divClust)
 
-divClustResults <- cutree(as.hclust(divClust), k = 5)
+divClustResults <- cutree(as.hclust(divClust), k = 2)
 table(divClustResults)
 clusterMembership <- c(clusterMembership, (divClustResults + currentNumberOfClusters)) 
-currentNumberOfClusters <- currentNumberOfClusters + 5
-
+currentNumberOfClusters <- currentNumberOfClusters + 2
 
 
 #cluster 4
 divClust <- diana(cluster4, diss = TRUE)
 plot(divClust)
 
-divClustResults <- cutree(as.hclust(divClust), k = 4)
+divClustResults <- cutree(as.hclust(divClust), h = 0.84)
 table(divClustResults)
 clusterMembership <- c(clusterMembership, (divClustResults + currentNumberOfClusters))
-currentNumberOfClusters <- currentNumberOfClusters + 4
-
+currentNumberOfClusters <- currentNumberOfClusters + 6
 
 
 #cluster 5
 divClust <- diana(cluster5, diss = TRUE)
 plot(divClust)
 
-divClustResults <- cutree(as.hclust(divClust), k = 1)
+divClustResults <- cutree(as.hclust(divClust), k = 7)
 table(divClustResults)
 clusterMembership <- c(clusterMembership, (divClustResults + currentNumberOfClusters)) 
-currentNumberOfClusters <- currentNumberOfClusters + 1
-
+currentNumberOfClusters <- currentNumberOfClusters + 7
 
 
 #cluster 6
 divClust <- diana(cluster6, diss = TRUE)
 plot(divClust)
 
-divClustResults <- cutree(as.hclust(divClust), k = 4)
+divClustResults <- cutree(as.hclust(divClust), h = 0.92)
 table(divClustResults)
 clusterMembership <- c(clusterMembership, (divClustResults + currentNumberOfClusters))
-currentNumberOfClusters <- currentNumberOfClusters + 4
-
+currentNumberOfClusters <- currentNumberOfClusters + 7
 
 
 #cluster 7
 divClust <- diana(cluster7, diss = TRUE)
-plot(divClust)
-
-divClustResults <- cutree(as.hclust(divClust), k = 3)
-table(divClustResults)
-clusterMembership <- c(clusterMembership, (divClustResults + currentNumberOfClusters))
-currentNumberOfClusters <- currentNumberOfClusters + 3
-
-
-
-#cluster 8
-divClust <- diana(cluster8, diss = TRUE)
-plot(divClust)
-
-divClustResults <- cutree(as.hclust(divClust), k = 3)
-table(divClustResults)
-clusterMembership <- c(clusterMembership, (divClustResults + currentNumberOfClusters))
-currentNumberOfClusters <- currentNumberOfClusters + 3
-
-
-
-#cluster 9
-divClust <- diana(cluster9, diss = TRUE)
-plot(divClust)
-
-divClustResults <- cutree(as.hclust(divClust), k = 3)
-table(divClustResults)
-clusterMembership <- c(clusterMembership, (divClustResults + currentNumberOfClusters))
-currentNumberOfClusters <- currentNumberOfClusters + 3
-
-
-
-#cluster 10
-divClust <- diana(cluster10, diss = TRUE)
-plot(divClust)
-
-divClustResults <- cutree(as.hclust(divClust), k = 3)
-table(divClustResults)
-clusterMembership <- c(clusterMembership, (divClustResults + currentNumberOfClusters))
-currentNumberOfClusters <- currentNumberOfClusters + 3
-
-
-
-#cluster 11
-divClust <- diana(cluster11, diss = TRUE)
 plot(divClust)
 
 divClustResults <- cutree(as.hclust(divClust), k = 2)
@@ -234,15 +180,5 @@ table(divClustResults)
 clusterMembership <- c(clusterMembership, (divClustResults + currentNumberOfClusters))
 currentNumberOfClusters <- currentNumberOfClusters + 2
 
+write.csv(clusterMembership, file="../../data/clusterMemberships/subClusters/docSim_k=33_membership.csv")
 
-
-#cluster 12
-divClust <- diana(cluster12, diss = TRUE)
-plot(divClust)
-
-divClustResults <- cutree(as.hclust(divClust), k = 4)
-table(divClustResults)
-clusterMembership <- c(clusterMembership, (divClustResults + currentNumberOfClusters))
-currentNumberOfClusters <- currentNumberOfClusters + 4
-
-write.csv(clusterMembership, file="data/clusterMemberships/subClusters/WMD_k=36_membership.csv")

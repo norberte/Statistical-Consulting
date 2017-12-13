@@ -32,7 +32,7 @@ def doc2vec_pretrained(rawCSVFile, columnNumberForText, modelPath):
     # writing the similarity matrix to a csv file
     modelPathBase = os.path.basename(modelPath)
     modelName = os.path.splitext(modelPathBase)[0]
-    simMatOutputFile = "../../../data/similarityMatrices/" + modelName + "_simMatrix.csv"
+    simMatOutputFile = "../../data/similarityMatrices/" + modelName + "_simMatrix.csv"
     with open(simMatOutputFile, 'w+') as file_vector:
         for i in range(0, len(similarityMatrix)):
             for j in range(0, len(similarityMatrix[i])):
@@ -44,20 +44,20 @@ def doc2vec_pretrained(rawCSVFile, columnNumberForText, modelPath):
     return similarityMatrix
 
 def test1():
-    rawFile = "../../../data/conference.csv"
+    rawFile = "../../data/conference.csv"
     colNum = 2
     modelSavingPath = "../languageModels/apnews_doc2vec.bin"
 
     return doc2vec_pretrained(rawCSVFile=rawFile, columnNumberForText=colNum, modelPath=modelSavingPath)
-    # or use this command to test-run it: Doc2Vec_pretrained.py -i "../../../data/conference.csv" -c 2 -m "../languageModels/apnews_doc2vec.bin"
+    # or use this command to test-run it: Doc2Vec_pretrained.py -i "../../data/conference.csv" -c 2 -m "../languageModels/apnews_doc2vec.bin"
 
 def test2():
-    rawFile = "../../../data/conference.csv"
+    rawFile = "../../data/conference.csv"
     colNum = 2
     modelSavingPath = "../languageModels/enwiki_doc2vec.bin"
 
     return doc2vec_pretrained(rawCSVFile=rawFile, columnNumberForText=colNum, modelPath=modelSavingPath)
-    # or use this command to test-run it: Doc2Vec_pretrained.py -i "../../../data/conference.csv" -c 2 -m "../languageModels/enwiki_doc2vec.bin"
+    # or use this command to test-run it: Doc2Vec_pretrained.py -i "../../data/conference.csv" -c 2 -m "../languageModels/enwiki_doc2vec.bin"
 def main(argv):
     inputCSVFile = ''
     colNum = 2

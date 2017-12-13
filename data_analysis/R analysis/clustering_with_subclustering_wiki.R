@@ -4,7 +4,7 @@ library(readr)
 library(mclust)
 library(cluster)
 
-docSim <- as.matrix(read_csv("data/similarityMatrices/enwiki_doc2vec_simMatrix.csv", col_names = FALSE))
+docSim <- as.matrix(read_csv("../../data/similarityMatrices/enwiki_doc2vec_simMatrix.csv", col_names = FALSE))
 dissimilarityMat = 1 - docSim
 
 ### Determining the number of clusters using various algorithms -----------
@@ -95,7 +95,7 @@ parallel_elbow(30, dissimilarityMat)
 # Mixture model ----
 doc_mm<- Mclust(dissimilarityMat, G=2:30)
 summary(doc_mm)
-write.csv(doc_mm$classification, file="data/clusterMemberships/mainClusters/doc2vec_wiki_mixtureModels_k=10_membership.csv" )
+write.csv(doc_mm$classification, file="../../data/clusterMemberships/mainClusters/doc2vec_wiki_mixtureModels_k=10_membership.csv" )
 
 cluster1 <- dissimilarityMat[doc_mm$classification==1,doc_mm$classification==1]
 cluster2 <- dissimilarityMat[doc_mm$classification==2,doc_mm$classification==2]
@@ -209,4 +209,4 @@ table(divClustResults)
 clusterMembership <- c(clusterMembership, (divClustResults + currentNumberOfClusters))
 currentNumberOfClusters <- currentNumberOfClusters + 1
 
-write.csv(clusterMembership, file="data/clusterMemberships/subClusters/doc2vec_wikiModel_k=29_membership.csv")
+write.csv(clusterMembership, file="../../data/clusterMemberships/subClusters/doc2vec_wikiModel_k=29_membership.csv")

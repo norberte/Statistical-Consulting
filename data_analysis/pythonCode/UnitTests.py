@@ -24,43 +24,40 @@ class Tests(unittest.TestCase):
         pass
 
     def testDocSim(self):
-        abstracts = importTextFromCSV("../../../data/conference.csv", 1)
+        abstracts = importTextFromCSV("../../data/conference.csv", 1)
         simMatrix = DocSim.test()
         self.assertEqual(len(abstracts), len(simMatrix))
     # check to see if there are as many rows (documents) in the similarity matrix, as in the original abstracts CSV file
 
     def testDoc2Vec_Wiki(self):
-        abstracts = importTextFromCSV("../../../data/conference.csv", 1)
+        abstracts = importTextFromCSV("../../data/conference.csv", 1)
         simMatrix = Doc2Vec_pretrained.test2()
         self.assertEqual(len(abstracts), len(simMatrix))
     # check to see if there are as many rows (documents) in the similarity matrix, as in the original abstracts CSV file
 
     def testDoc2Vec_ApNews(self):
-        abstracts = importTextFromCSV("../../../data/conference.csv", 1)
+        abstracts = importTextFromCSV("../../data/conference.csv", 1)
         simMatrix = Doc2Vec_pretrained.test1()
         self.assertEqual(len(abstracts), len(simMatrix))
     # check to see if there are as many rows (documents) in the similarity matrix, as in the original abstracts CSV file
 
     def testDoc2Vec_selfTrained(self):
-        abstracts = importTextFromCSV("../../../data/conference.csv", 1)
+        abstracts = importTextFromCSV("../../data/conference.csv", 1)
         simMatrix = Doc2Vec_selfTrained.test()
         self.assertEqual(len(abstracts), len(simMatrix))
     # check to see if there are as many rows (documents) in the similarity matrix, as in the original abstracts CSV file
 
     def testTextProcessing(self):
-        abstracts = importTextFromCSV("../../../data/conference.csv", 1)
+        abstracts = importTextFromCSV("../../data/conference.csv", 1)
         cleanAbstracts = textProcessing.test()
         self.assertEqual(len(abstracts), len(cleanAbstracts))
     # check to see if there are as many rows (documents) in the cleaned up text, as in the original abstracts CSV file
 
     def testWMD(self):
-        abstracts = importTextFromCSV("../../../data/conference.csv", 1)
+        abstracts = importTextFromCSV("../../data/conference.csv", 1)
         simMatrix = WMD.test()
         self.assertEqual(len(abstracts), len(simMatrix))
     # check to see if there are as many rows (documents) in the similarity matrix, as in the original abstracts CSV file
-
-
-
 
 if __name__ == '__main__':
     unittest.main()

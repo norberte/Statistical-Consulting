@@ -18,6 +18,15 @@ pytorch, which can only be installed on Linux or OSX (see http://pytorch.org/ an
 
 Thus, InferSent can't run on Windows operation systems at all, because of pytorch's limitations.
 
+# Data Extraction:
+1. Run the following command:
+
+`python data_extraction/main.py data/conference_data/SSC/2017/abstracts.tex data/conference_data/SSC/2017/prog.tex`
+
+Output is written to data/conference.csv
+
+Unit tests for this component can be ran by `python -m unittest tests.data_extraction`
+
 # Abstract Text Analysis Process:
 1.	DocSim: Navigate to /src/data_analysis/pythonCode/ and run the command:
 DocSim.py -i "../../../data/conference.csv" -c 2

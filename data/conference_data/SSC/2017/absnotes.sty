@@ -1,0 +1,202 @@
+% abstract style for SSC meeting abstracts
+\typeout{Abstract style `abstract' for SSC abstracts}
+\typeout{Last revised <22 Feb 2011>}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{ifthen}
+%\input amssym.def
+%\input amssym
+
+%\renewcommand{\@oddfoot}{\hss\rm\today\hss}
+%\renewcommand{\@evenfoot}{\@oddfoot}
+
+%\renewcommand{\@evenhead}{\leftmark\hfill\rightmark}
+%\renewcommand{\@evenhead}{\makebox[1.5in][l]
+       %{\leftmark}\hss --\thepage -- \hss\makebox[1.5in]{\rightmark}}
+%\renewcommand{\@oddhead}{\@evenhead}
+%\renewcommand{\@oddhead}{\ifnum \thepage>1 \@evenhead \else {} \fi}
+
+\setlength{\leftmargini}{15pt}
+\setlength{\textwidth}{7.25in}
+% \headheight + \headsep + \footskip -> 85pt (1.18in)
+% default 1in above top margin
+\setlength{\textheight}{8.45in} % leaves 1in at top and 0.75in at bottom
+% For programme, Nathalie wants 'outside' margin of 0.5in and 'inside' margin
+% of 0.75in.  The next two settings assume that our page 1 ends up even
+% in the programme, 
+\setlength{\oddsidemargin}{-0.5in}
+\setlength{\evensidemargin}{-.25in}%used if \documentclass has [twoside] option
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{3pt}
+\setlength{\topmargin}{0in}
+\setlength{\headheight}{29pt}% for two-line session headings
+
+%\setlength{\oddsidemargin}{18pt} %gives a margin on left of odd numbered pages
+%                                 % of 1 in. + 18pt.
+%\setlength{\evensidemargin}{\oddsidemargin}
+%\def\itcorr{\ifx\next.\else\if\next,\else\/\fi\fi}
+%\def\emph#1{{\em #1}\futurelet\next\itcorr}
+%
+%\newcommand{\lecture}[1]{\vskip 0.4cm\centerline{\textbf{ #1}}}
+%
+%\newcommand{\session}[2]{
+%   \vskip .6cm\pagebreak[0]\parbox{\textwidth}
+%      {\hrule\vskip .3cm\centering\textbf{\Large #1}\\*[3pt]
+%      \ifthenelse{\equal{#2}{}}{}{#2}\hrule}
+%   \vskip .4cm}
+%
+%\newcommand{\sessionA}[2]{
+%   \vskip .6cm\pagebreak[0]\parbox{\textwidth}
+%      {\hrule\vskip .3cm\begin{center}\textbf{#1}\end{center}\hrule}
+%   \vskip .4cm}
+
+
+% Macros for formatting abstract author name and (optional) affiliation.
+% For organizations that don't have separate co-author data (e.g. CMS and
+% CanaDAM) \absaffil could use ', #1', rather than ' (#1)'.
+
+%\newcommand{\absauthor}[2]{\textbf{#1 #2}}
+%\newcommand{\absaffil}[1]{\ifthenelse{\equal{#1}{}}{}{ (#1)}}
+
+%\newcommand{\Author}[2]{%
+%%\index{#3@#2, #1}%
+%\index{#2,#1}%
+%}
+
+\newcommand{\abstitle}[2]{
+\newline \vspace{2pt}
+\textit{#1}\newline\
+{\noindent\protect\otherlanguage{francais}{\textit{#2}}}
+\medskip
+}
+
+%\newcommand{\abshead}[2]{\vspace{5pt plus 2pt minus 1.5pt}%
+%                           \smallbreak
+%                           \begin{tabular}[t]{@{\hspace{0pt}}p{505.8pt}@{}}
+%                           \rule{3.8cm}{0.2pt}\\%
+%                           #1 \\
+%                           \whenwhere\emph{#2} \end{tabular}%
+%                           \smallskip\par}
+
+% Macro for placing two languages of abstract body side by side
+\newcommand{\absSideBySide}[2]{%
+\begin{Parallel}[c]{.44\textwidth}{.52\textwidth}
+\ParallelLText{\noindent #1}
+\ParallelRText{\noindent\protect\otherlanguage{francais}{#2}}
+\end{Parallel}}
+
+
+\newcommand{\absFSession}[6]{
+%\chead{\vspace{2pt}\large \bfseries #1 \\ #2 }
+\begin{center}
+{\large \bfseries #1 \\ #2 }
+
+\ifthenelse{\equal{#3}{}}{}{ {\large\bfseries Chair/Pr\'esident: #3}}
+
+\ifthenelse{\equal{#4}{}}{}{ {\large\bfseries Organizer/Responsable: #4 }}
+
+{\large\bfseries Room/Salle: #5}
+
+{\large\bfseries Abstract/R\'esum\'e} 
+\end{center}
+\label{#6} 
+}
+
+\newcommand{\absSession}[6]{
+\newpage
+\chead{\vspace{2pt}\large \bfseries #1 \\ #2 }
+\begin{center}
+\ifthenelse{\equal{#3}{}}{}{ {\large\bfseries Chair/Pr\'esident: #3}}
+
+\ifthenelse{\equal{#4}{}}{}{ {\large\bfseries Organizer/Responsable: #4 }}
+
+{\large\bfseries Room/Salle: #5}
+
+{\large\bfseries Abstract/R\'esum\'e} 
+\end{center}
+\label{#6} 
+}
+
+
+%
+%\newcommand{\whenwhere}{}%# holds room and time, for final version
+%\newcommand{\abs}[3]{\vspace{5pt plus 2pt minus 1.5pt}%
+%                           \smallbreak
+%                           \begin{tabular}[t]{@{\hspace{0pt}}p{7.16in}}
+%                           \rule{3.8cm}{0.2pt}\\%
+%%                           \textbf{\uppercase{#1}}, #2 \\
+%                           \textbf{#1}, #2 \\
+%                           \whenwhere\emph{#3} \end{tabular}%
+%                           \smallskip}
+%
+%
+
+\newcommand{\absTime}[2]{
+\hrule
+\textbf{[\getdata{1} #1 \getdata{3} #1/\getdata{2} #1 \getdata{4} #1, #2]\\[+2pt]} 
+}
+
+
+%
+%
+%\newcommand{\C}[1]{\mbox{$\cal #1$}}
+%
+%\font\teneurm=eurm10
+%\font\seveneurm=eurm7
+%\font\fiveeurm=eurm5
+%\newfam\eurmfam
+%\textfont\eurmfam=\teneurm
+%\scriptfont\eurmfam=\seveneurm
+%\scriptscriptfont\eurmfam=\fiveeurm
+%
+%
+%\font\teneurm=eurm10
+%\font\seveneurm=eurm7
+%\font\fiveeurm=eurm5
+%\newfam\eurmfam
+%\textfont\eurmfam=\teneurm
+%\scriptfont\eurmfam=\seveneurm
+%\scriptscriptfont\eurmfam=\fiveeurm
+%
+%\font\teneusm=eusm10
+%\font\seveneusm=eusm7
+%\font\fiveeusm=eusm5
+%\newfam\eusmfam
+%\textfont\eusmfam=\teneusm
+%\scriptfont\eusmfam=\seveneusm
+%\scriptscriptfont\eusmfam=\fiveeusm
+
+
+%\def\er#1{\mbox{\fam\eurmfam\relax#1}}
+%\def\es#1{\mbox{\fam\eusmfam\relax#1}}
+
+%
+%\def\lcm{\mathop{\operator@font lcm}\nolimits} %see lfonts.new
+%\def\glb{\mathop{\operator@font glb}\nolimits}
+%\def\lub{\mathop{\operator@font lub}\nolimits}
+%\def\dom{\mathop{\operator@font dom}\nolimits}
+%\def\rng{\mathop{\operator@font rng}\nolimits}
+%
+%%\def\pmod#1{\allowbreak\mkern9mu({\operator@font mod}\,\,#1)}
+%
+%\def\proclaim#1{\subsubsection*{\sc#1.}\begingroup\em} 
+%
+%\def\newop#1{%
+%  \expandafter\gdef\csname #1\endcsname{\mathop{\rm #1}\nolimits}}
+%  
+% \outer\def\proclaim#1. #2\par{\medbreak
+%\textbf{#1}\hskip 1 em\ignorespaces
+%{\it #2 \par}
+%\ifdim\lastskip<\medskipamount \removelastskip\penalty55\medskip\fi
+%}
+%
+%\def\state#1. {\ifdim\lastskip<\medskipamount
+%             \removelastskip \medskip
+%             \fi
+%             \par{\sc #1.}\hskip 1 em \ignorespaces}
+%%%%     example of special case of \state macro
+%
+%
+%
+%\newcommand{\SessRef}[2]{#2\ifthenelse{\equal{#1}{}}{}{ (#1)}}
