@@ -13,7 +13,7 @@
   a.	Go inside data_analysis/pythonCode/InferSent/encoder and unzip the glove.840B.300d.zip file.
   b.	Run main.py inside the InferSent folder from a Linux or OSX operating system, after pytorch was configured. Adjust file path inside main.py, if needed.
 
-Unit tests for this component can be ran by navigating to data_analysis/pythonCode/ and run the command : `python UnitTests.py`
+7. Unit tests for this component can be ran by navigating to data_analysis/pythonCode/ and run the command : `python UnitTests.py`
 
 Abstract Clustering Process:
 
