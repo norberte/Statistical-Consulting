@@ -1,0 +1,287 @@
+"","Abstract","class","Cluster","Flags","StartTime","EndTime"
+"1","An Overview of Existing and a Novel Approaches to Multi-label Classification",1,-1,"Keynote",2018-03-18 08:40:00,2018-03-18 09:01:00
+"2","Efficiently Computing the Projection Median in $R^3$",1,6,"Student",2018-03-18 09:01:00,2018-03-18 09:22:00
+"3","Feature Selection Methods for the Development of Case Definitions for Common Chronic Conditions in Primary Care Electronic Medical Record Data",2,4,"Invited",2018-03-18 09:01:00,2018-03-18 09:22:00
+"4","Group Variable Selection for Recurrent Event Data",3,27,"Student",2018-03-18 09:01:00,2018-03-18 09:22:00
+"5","Accurate Confidence Intervals for Clustered Data and Small Samples",4,28,"Student",2018-03-18 09:01:00,2018-03-18 09:22:00
+"6","Disclosure Control and Random Tabular Adjustment",5,13,"Student",2018-03-18 09:01:00,2018-03-18 09:22:00
+"7","Designing and Launching a Professional Master’s Program in Data Science: Tales from the UBC Experience",6,41,"Student",2018-03-18 09:01:00,2018-03-18 09:22:00
+"8","Vine Copulas for Imputation of Monotone Non-response",7,30,"Invited",2018-03-18 09:01:00,2018-03-18 09:22:00
+"9","Probabilistic Symmetries and Random Locations",8,39,"Invited",2018-03-18 09:01:00,2018-03-18 09:22:00
+"10","A Simple Tool for Bounding the Deviation of Random Matrices on Geometric Sets, with Applications",1,6,"Student",2018-03-18 09:22:00,2018-03-18 09:43:00
+"11","Statistical Opportunities and Challenges in Multiple-Platform Biomedical Studies",2,4,"Invited",2018-03-18 09:22:00,2018-03-18 09:43:00
+"12","Joint Analysis of a Longitudinal Binary Outcome and Recurrent Events with Application to Cystic Fibrosis Outcomes",3,27,"Invited",2018-03-18 09:22:00,2018-03-18 09:43:00
+"13","A Self-Selecting Procedure for the Optimal Discretization of the Timeline for Longitudinal Causal Inference Methods with Electronic Health Data",4,28,"Student",2018-03-18 09:22:00,2018-03-18 09:43:00
+"14","Design and Relative Efficiency of Tracing Studies in Cohorts with Loss to Followup",5,13,"Invited",2018-03-18 09:22:00,2018-03-18 09:43:00
+"15","A Dirichlet Regression Model for Compositional Data with Zeros",6,41,"Invited",2018-03-18 09:22:00,2018-03-18 09:43:00
+"16","Estimation Strategies for Weighted Least Absolute Deviations Regression Models",7,30,"Contributed",2018-03-18 09:22:00,2018-03-18 09:43:00
+"17","A More Dynamic Lab Experience: Implementation of Weekly Automated and Teaching Assistant Supported Lab Exercises to Increase Student Engagement through Small-Step Learning",8,39,"Invited",2018-03-18 09:22:00,2018-03-18 09:43:00
+"18","A Novel Hidden Markov Model Approach for Differentially Methylated Region Identification in DNA Methylation Data",1,6,"Student",2018-03-18 09:43:00,2018-03-18 10:04:00
+"19","Measuring Cash and Payment Card Usage at the Point-of-Sale for Consumers and Merchants",2,4,"Invited",2018-03-18 09:43:00,2018-03-18 10:04:00
+"20","Predictive Analytics in Business",3,27,"Invited",2018-03-18 09:43:00,2018-03-18 10:04:00
+"21","Self-Normalized Weak and Strong Functional Limit Laws in the Domain of Attraction of Stable Laws",4,28,"Invited",2018-03-18 09:43:00,2018-03-18 10:04:00
+"22","Predictive Mean Matching Imputation in Survey Sampling",5,13,"Invited",2018-03-18 09:43:00,2018-03-18 10:04:00
+"23","Joint Analysis of Longitudinal Zero-heavy Panel Count Outcomes with Application to Understanding Desistance from Criminal Activity",6,41,"Invited",2018-03-18 09:43:00,2018-03-18 10:04:00
+"24","Optimal Investment Strategies and Inter-Generational Risk-Sharing for Target Benefit Pension Plans",7,30,"Contributed",2018-03-18 09:43:00,2018-03-18 10:04:00
+"25","Portfolio of Exchangeable Risks: Aggregation with Partial Information on Dependence",8,39,"Contributed",2018-03-18 09:43:00,2018-03-18 10:04:00
+"26","Analysis of Heterogeneous Lifetime Data with Measurement Error in Covariate",1,6,"Student",2018-03-18 10:04:00,2018-03-18 10:25:00
+"27","Breaking the Myth of Breaking Randomization: A Causal Examination of Arm-Based Meta-Analysis",2,4,"Invited",2018-03-18 10:04:00,2018-03-18 10:25:00
+"28","Adaptive Functional Regression with Manifold Structures",3,27,"Invited",2018-03-18 10:04:00,2018-03-18 10:25:00
+"29","Motivating Introductory Statistics",4,28,"Contributed",2018-03-18 10:04:00,2018-03-18 10:25:00
+"30","Ergodicity and Approximation of the Conditional Causation Probability of Engineering Systems",5,13,"Invited",2018-03-18 10:04:00,2018-03-18 10:25:00
+"31","Statistics, Science and Technology",6,41,"Invited",2018-03-18 10:04:00,2018-03-18 10:25:00
+"32","Non-regular Inference for Dynamic Weighted Ordinary Least Squares: Understanding the Impact of Solid Food Intake in Infancy on Childhood Weight",7,30,"Contributed",2018-03-18 10:04:00,2018-03-18 10:25:00
+"33","Multiple Imputation of Incomplete Accelerometer Data",1,6,"Invited",2018-03-18 10:25:00,2018-03-18 10:46:00
+"34","How the Design of the New Zealand Health Survey Contributes to Informed Decision Making in Public Health Policy",2,4,"Invited",2018-03-18 10:25:00,2018-03-18 10:46:00
+"35","Empirical Likelihood and Semiparametric Inference with Survey Data",3,27,"Contributed",2018-03-18 10:25:00,2018-03-18 10:46:00
+"36","SimRVPedigree: An R Package to Simulate Pedigrees Ascertained for Multiple Relatives Affected by a Rare Disease",4,28,"Contributed",2018-03-18 10:25:00,2018-03-18 10:46:00
+"37","The Analysis of Longitudinal Multivariate (Discrete or Continuous) Traits under Irregular Time Measurements",5,13,"Invited",2018-03-18 10:25:00,2018-03-18 10:46:00
+"38","Non-identifiable Interaction Models with Misclassification",6,41,"Contributed",2018-03-18 10:25:00,2018-03-18 10:46:00
+"39","Missing Data Mechanisms for Incomplete Longitudinal Observations in both Responses and Covariates",1,6,"Invited",2018-03-18 10:46:00,2018-03-18 11:07:00
+"40","Optimal Investment Strategies for Participating Contracts",2,4,"Invited",2018-03-18 10:46:00,2018-03-18 11:07:00
+"41","On the Mixtures of Length-biased Weibull Distributions",3,27,"Contributed",2018-03-18 10:46:00,2018-03-18 11:07:00
+"42","Empirical Likelihood Multiscale Inference of the Scaling Property of Time Series Models",4,28,"Contributed",2018-03-18 10:46:00,2018-03-18 11:07:00
+"43","Joint Modeling of Longitudinal Proportional Measurements and Survival Times with a Cure Fraction",1,6,"Invited",2018-03-18 11:07:00,2018-03-18 11:28:00
+"44","Methods of Selecting a Person within a Household: Mailed Invitations for an Electronic Questionnaire",2,4,"Contributed",2018-03-18 11:07:00,2018-03-18 11:28:00
+"45","Practical Considerations when Analyzing Small Samples of Discrete Survival Times Using the Grouped Relative Risk Model",3,27,"Contributed",2018-03-18 11:07:00,2018-03-18 11:28:00
+"46","Analysis of Recurrent Events Data Based on Trend-Renewal Process",4,28,"Contributed",2018-03-18 11:07:00,2018-03-18 11:28:00
+"47","Left-Truncated and Right-Censored Survival Data Analysis with Covariate Measurement Error",1,6,"Contributed",2018-03-18 11:28:00,2018-03-18 11:49:00
+"48","Bayesian Sensitivity Analysis for Non-ignorable Missing Data in Longitudinal Studies",2,4,"Contributed",2018-03-18 11:28:00,2018-03-18 11:49:00
+"49","A Flexible Parametric Proportional Hazards Model for Time-to-Event Data",3,27,"Contributed",2018-03-18 11:28:00,2018-03-18 11:49:00
+"50","On Copula-Based Conditional Quantile Estimators",4,28,"Contributed",2018-03-18 11:28:00,2018-03-18 11:49:00
+"51","Testing for Parallel Carryover Effects in Redundant Systems",1,6,"Contributed",2018-03-18 13:30:00,2018-03-18 13:52:00
+"52","The Collection Challenges of the 2016 Reverse Record Check Survey",2,4,"Contributed",2018-03-18 13:30:00,2018-03-18 13:52:00
+"53","New approach to GIX/Geom/1 Queues involving Heavy-Tailed distributions",3,27,"Contributed",2018-03-18 13:30:00,2018-03-18 13:52:00
+"54","Teaching the Statistical Investigation Process with Simulation-Based Inference to Improve Statistical Thinking",4,36,"Invited",2018-03-18 13:30:00,2018-03-18 13:52:00
+"55","Geostatistical Inference under Preferential Sampling",5,18,"Student",2018-03-18 13:30:00,2018-03-18 13:52:00
+"56","Tree-Based Approaches for Personalized Risk Prediction with Longitudinal Biomarkers: An Application to Fetal Growth",6,42,"Invited",2018-03-18 13:30:00,2018-03-18 13:52:00
+"57","Achieving Higher Efficiency and Robustness in Longitudinal Studies with Dropout",7,31,"Invited",2018-03-18 13:30:00,2018-03-18 13:52:00
+"58","Change-Point Detection in Time Series using Ordinal Patterns",8,40,"Student",2018-03-18 13:30:00,2018-03-18 13:52:00
+"59","Empirical Eigenvalue Based Testing for Structural Breaks in Linear Factor Models",1,6,"Contributed",2018-03-18 13:52:00,2018-03-18 14:14:00
+"60","Modeling T-cell Trajectory Data using Hidden Markov Models",2,4,"Contributed",2018-03-18 13:52:00,2018-03-18 14:14:00
+"61","Stochastic Correlation and Regulatory Capital",4,36,"Invited",2018-03-18 13:52:00,2018-03-18 14:14:00
+"62","Non-response Follow-up for Business Surveys",5,18,"Invited",2018-03-18 13:52:00,2018-03-18 14:14:00
+"63","Robust Estimation under Cellwise and Casewise Contamination",6,42,"Invited",2018-03-18 13:52:00,2018-03-18 14:14:00
+"64","Optimal Designs for Estimating Parameters of the Bradley-Terry Model for Paired Comparisons",7,31,"Contributed",2018-03-18 13:52:00,2018-03-18 14:14:00
+"65","Spatial Quantile Regression Models for High-Dimensional Imaging Data",8,40,"Invited",2018-03-18 13:52:00,2018-03-18 14:14:00
+"66","DM-PhyClus: A Bayesian Phylogenetic Clustering Algorithm Incorporating Dirichlet-Multinomial Priors",1,6,"Contributed",2018-03-18 14:14:00,2018-03-18 14:36:00
+"67","Foldover Designs with Column Permutations",2,4,"Contributed",2018-03-18 14:14:00,2018-03-18 14:36:00
+"68","Archimedean Copulas through Multivariate Gamma Distributions",4,36,"Invited",2018-03-18 14:14:00,2018-03-18 14:36:00
+"69","Estimating the Population Size of Greater Victoria’s Injection Drug Users using Capture-Recapture Methods",5,18,"Invited",2018-03-18 14:14:00,2018-03-18 14:36:00
+"70","Improved Estimation and Identification of Block-Exchangeable Dependence Structures",6,42,"Invited",2018-03-18 14:14:00,2018-03-18 14:36:00
+"71","Estimation in Model Selection after Imputation",7,31,"Contributed",2018-03-18 14:14:00,2018-03-18 14:36:00
+"72","Robust Small Area Estimation in Generalized Linear Models",8,40,"Invited",2018-03-18 14:14:00,2018-03-18 14:36:00
+"73","Bayesian Optimality for Beran's Class of Tests of Uniformity around the Circle",1,6,"Contributed",2018-03-18 14:36:00,2018-03-18 14:58:00
+"74","Good Deal Indices in Asset Pricing: Actuarial and Financial Implications",4,36,"Invited",2018-03-18 14:36:00,2018-03-18 14:58:00
+"75","Confidence Estimating Functions for Data Integration",5,18,"Invited",2018-03-18 14:36:00,2018-03-18 14:58:00
+"76","Two Innovative Applications of Classification and Regression Trees",6,42,"Contributed",2018-03-18 14:36:00,2018-03-18 14:58:00
+"77","Incorporating Medians in Meta-Analysis",7,31,"Contributed",2018-03-18 14:36:00,2018-03-18 14:58:00
+"78","Seasonality in Influenza Mortality: Moving Beyond the Annual Cycle",1,6,"Contributed",2018-03-18 15:30:00,2018-03-18 15:52:00
+"79","Balanced Imputation for Swiss Cheese Nonresponse",2,43,"Student",2018-03-18 15:30:00,2018-03-18 15:52:00
+"80","An Interval Censored MPR Survival Model",3,1,"Student",2018-03-18 15:30:00,2018-03-18 15:52:00
+"81","Improved Global Minimum Variance Portfolio via a Dominant Eigenvalue Shrinkage",4,36,"Contributed",2018-03-18 15:30:00,2018-03-18 15:52:00
+"82","Revisiting Variance Decomposition when Independent Samples Intersect",5,18,"Contributed",2018-03-18 15:30:00,2018-03-18 15:52:00
+"83","A deep learning-based integrative analysis framework for molecular classification of breast cancer",6,42,"Contributed",2018-03-18 15:30:00,2018-03-18 15:52:00
+"84","Comparison of Multivariate Classifiers in the Presence of Covariates in Repeated Measures Designs",7,34,"Student",2018-03-18 15:30:00,2018-03-18 15:52:00
+"85","How to tell when Association might be Causation",8,14,"Invited",2018-03-18 15:30:00,2018-03-18 15:52:00
+"86","A Penalized Approach to Estimating Network Changes in the Human Microbiome",1,6,"Contributed",2018-03-18 15:52:00,2018-03-18 16:14:00
+"87","Aggregate Claim Analysis in a Two-sided Exit Setting with Dependence",2,43,"Invited",2018-03-18 15:52:00,2018-03-18 16:14:00
+"88","A Simple Variance Control Chart with Double Sampling Scheme",3,1,"Invited",2018-03-18 15:52:00,2018-03-18 16:14:00
+"89","Constrained Mean-Variance Portfolio in a Market with Stochastic Volatility",4,36,"Contributed",2018-03-18 15:52:00,2018-03-18 16:14:00
+"90","Matrix Linear Discriminant Analysis",7,34,"Invited",2018-03-18 15:52:00,2018-03-18 16:14:00
+"91","Some Experiences From an Industry Collaboration",8,14,"Invited",2018-03-18 15:52:00,2018-03-18 16:14:00
+"92","A Convex Regression Approach to Pickands Dependence Function Estimation",1,6,"Contributed",2018-03-18 16:14:00,2018-03-18 16:36:00
+"93","Vine Copula Regression",2,43,"Invited",2018-03-18 16:14:00,2018-03-18 16:36:00
+"94","The Challenge of Creating Data Collection Methods that are Neither Too Far Ahead nor Behind our Survey Respondents",3,1,"Invited",2018-03-18 16:14:00,2018-03-18 16:36:00
+"95","Outlier Robust Estimation of the Total Private Cost of Payment Methods for Large Businesses",4,36,"Contributed",2018-03-18 16:14:00,2018-03-18 16:36:00
+"96","Robust Discrimination Designs over Hellinger Neighbourhoods",7,34,"Contributed",2018-03-18 16:14:00,2018-03-18 16:36:00
+"97","Progressively Type-II Censored Competing Risks Data from the Linear Exponential Distribution",1,6,"Contributed",2018-03-18 16:36:00,2018-03-18 16:58:00
+"98","Generalized Simulated Method-of-Moments for Copula Parameters of Arbitrary Dimension",2,43,"Invited",2018-03-18 16:36:00,2018-03-18 16:58:00
+"99","Challenges and Strategies for Inference on a Stochastic Multi-Pathogen Model of Disease Dynamics in San Luis Potosi, Mexico ",3,1,"Invited",2018-03-18 16:36:00,2018-03-18 16:58:00
+"100","On the Moments and the Distribution of Aggregate Discounted Claims in a Markovian Environment",4,36,"Contributed",2018-03-18 16:36:00,2018-03-18 16:58:00
+"101","The Relative Deviation from Predicted Values as a Tool to Prioritize Units for Failed Edit Follow-Up in IBSP",7,34,"Contributed",2018-03-18 16:36:00,2018-03-18 16:58:00
+"102","Clustering Discrete Valued Time Series",1,-1,"Keynote",2018-03-19 08:40:00,2018-03-19 09:01:00
+"103","Flipping the Online Learning Environment",1,16,"Student",2018-03-19 09:01:00,2018-03-19 09:22:00
+"104","Approximation of Squared Integrable Random Variables with Nonlinear Stochastic Integrals",2,43,"Invited",2018-03-19 09:01:00,2018-03-19 09:22:00
+"105","Simple Measures of Individual Cluster-Membership Certainty for Hard Partitional Clustering",3,1,"Contributed",2018-03-19 09:01:00,2018-03-19 09:22:00
+"106","The Randomized Registry Trial — Opportunities, Challenges and Solutions ",4,15,"Invited",2018-03-19 09:01:00,2018-03-19 09:22:00
+"107","Geographic Topic Modelling to Predict Regional Beer Success",5,19,"Invited",2018-03-19 09:01:00,2018-03-19 09:22:00
+"108","Estimating Cross-validatory Predictive P-values with Integrated Importance Sampling for Disease Mapping Models",6,9,"Invited",2018-03-19 09:01:00,2018-03-19 09:22:00
+"109","Factor Copula Analysis for Multivariate Ordinal Data",7,8,"Student",2018-03-19 09:01:00,2018-03-19 09:22:00
+"110","Maximum Likelihood Estimation of Marine Predators' Diet Proportions",8,21,"Invited",2018-03-19 09:01:00,2018-03-19 09:22:00
+"111","Effectiveness of Gamification Feature in Introductory Statistics Course",1,16,"Student",2018-03-19 09:22:00,2018-03-19 09:43:00
+"112","Modelling Multi-Population Mortality Dependence with a Regime-Switching Copula",2,43,"Invited",2018-03-19 09:22:00,2018-03-19 09:43:00
+"113","On Convergence of Sample Correlation Matrices in High-Dimensional Data",3,1,"Contributed",2018-03-19 09:22:00,2018-03-19 09:43:00
+"114","Incorporating Simulation-Based Inference in an Introductory Statistics Course",4,15,"Invited",2018-03-19 09:22:00,2018-03-19 09:43:00
+"115","Risk Classification and Prediction with Administrative Health Data",5,19,"Invited",2018-03-19 09:22:00,2018-03-19 09:43:00
+"116","On Total Dividends under a Threshold Strategy",6,9,"Invited",2018-03-19 09:22:00,2018-03-19 09:43:00
+"117","Properties of Risk Measures Inspired from the Ruin Probability, the Deficit at Ruin, and the Time of Ruin",7,8,"Invited",2018-03-19 09:22:00,2018-03-19 09:43:00
+"118","Investigating the Impact of Design Characteristics on Statistical Efficiency within Discrete Choice Experiments: A Systematic Survey",8,21,"Contributed",2018-03-19 09:22:00,2018-03-19 09:43:00
+"119","Automated Homework Generation and Grading with R",1,16,"Invited",2018-03-19 09:43:00,2018-03-19 10:04:00
+"120","A Multi-State Model for a Life Insurance Product with Integrated Health Rewards Program",2,43,"Invited",2018-03-19 09:43:00,2018-03-19 10:04:00
+"121","A Longitudinal Linear Mixed Effect Model for Bivariate Responses with Measurement Errors and Misclassification in Covariates",3,1,"Contributed",2018-03-19 09:43:00,2018-03-19 10:04:00
+"122","Statistical Methodology on Human Microbiome Data Analysis",4,15,"Invited",2018-03-19 09:43:00,2018-03-19 10:04:00
+"123","Small Area Estimation with Covariate Measurement Error",5,19,"Invited",2018-03-19 09:43:00,2018-03-19 10:04:00
+"124","The Silicon Valley Wage Cartel: Understanding its Effects on the Regional Labour Market with Dynamic Networks",6,9,"Invited",2018-03-19 09:43:00,2018-03-19 10:04:00
+"125","Building a Basketball Analytics Startup as a Statistics Student",7,8,"Contributed",2018-03-19 09:43:00,2018-03-19 10:04:00
+"126","Comparing Bayesian External and Internal Validation Methods in Correcting Outcome Misclassification Bias in Logistic Regression",1,16,"Invited",2018-03-19 10:04:00,2018-03-19 10:25:00
+"127","Strong Heredity Penalized Regression Models for Non-Linear Gene-Environment Interactions",2,43,"Contributed",2018-03-19 10:04:00,2018-03-19 10:25:00
+"128","An Extended Compound Symmetry Model for High-dimensional Covariance Matrix Estimation",3,1,"Contributed",2018-03-19 10:04:00,2018-03-19 10:25:00
+"129","Statistical Disclosure Control for Statistical Outputs: Where Do We Go From Here?",4,15,"Invited",2018-03-19 10:04:00,2018-03-19 10:25:00
+"130","Strategies to Handle Missing Binary Outcomes in Cluster Randomized Trials",5,19,"Invited",2018-03-19 10:04:00,2018-03-19 10:25:00
+"131","How Best to Bridge the Gap between Statistics and Medical Practice",6,9,"Invited",2018-03-19 10:04:00,2018-03-19 10:25:00
+"132","Educreations: Video Tools for Statistical Teaching",1,16,"Invited",2018-03-19 10:25:00,2018-03-19 10:46:00
+"133","A Bayesian Approach for Pattern Detection in Extremely Small Sample Sizes: Application to Proteomic Cell Line Data of Human Leukemia",2,43,"Contributed",2018-03-19 10:25:00,2018-03-19 10:46:00
+"134","Is All That Coffee I’m Drinking Hurting or Harming Me? Understanding Causality",4,15,"Invited",2018-03-19 10:25:00,2018-03-19 10:46:00
+"135","Should a Propensity Score be Super? A Comparison of Estimation Methods",5,19,"Contributed",2018-03-19 10:25:00,2018-03-19 10:46:00
+"136","Event History Analysis of Data from Non-Ignorable Observation Schemes",1,16,"Invited",2018-03-19 10:46:00,2018-03-19 11:07:00
+"137","Generalized Bent-Cable Regression for Changepoint Data",2,43,"Contributed",2018-03-19 10:46:00,2018-03-19 11:07:00
+"138","Probability-Scale Residuals for Continuous, Discrete, and Censored Data",4,15,"Invited",2018-03-19 10:46:00,2018-03-19 11:07:00
+"139","Data Science Programs at the University of Waterloo",1,16,"Invited",2018-03-19 11:07:00,2018-03-19 11:28:00
+"140","Reduced-Rank Singular Value Decomposition for Dimension Reduction with High-Dimensional Data",2,43,"Contributed",2018-03-19 11:07:00,2018-03-19 11:28:00
+"141","What is Synthetic about Synthetic Datasets?",4,15,"Invited",2018-03-19 11:07:00,2018-03-19 11:28:00
+"142","Reflections on Interactions with Industry",1,16,"Invited",2018-03-19 11:28:00,2018-03-19 11:49:00
+"143","A Power Comparison of Robust Tests for Monotone Trend in Recurrent Event Processes",10,-1,"Poster",2018-03-19 12:00:00,2018-03-19 17:00:00
+"144","A Second Chance? - A SoTL Project on Implementing Midterm Corrections in a Large Introductory-Level Statistics Course",10,-1,"Poster",2018-03-19 12:00:00,2018-03-19 17:00:00
+"145","A Time Series Approach for the Underlying Driven Process in Stocks and its Large Sample Theory",10,-1,"Poster",2018-03-19 12:00:00,2018-03-19 17:00:00
+"146","Advanced Regression Models for Automated Valuation Model",10,-1,"Poster",2018-03-19 12:00:00,2018-03-19 17:00:00
+"147","Discriminant Analysis for Longitudinal Data",10,-1,"Poster",2018-03-19 12:00:00,2018-03-19 17:00:00
+"148","Estimating a Disease Prevalence with Group Testing Data and Imperfect Assays",10,-1,"Poster",2018-03-19 12:00:00,2018-03-19 17:00:00
+"149","Genetic Risk Prediction for Type X Colorectal Cancer Families",10,-1,"Poster",2018-03-19 12:00:00,2018-03-19 17:00:00
+"150","High Dimensional Clustering: tHDDC",10,-1,"Poster",2018-03-19 12:00:00,2018-03-19 17:00:00
+"151","Local Influence Analysis of a State-Space Fish Stock Assessment Model Compared to Conventional Modelling Approaches",10,-1,"Poster",2018-03-19 12:00:00,2018-03-19 17:00:00
+"152","Mixture Model Averaging for Clustering",10,-1,"Poster",2018-03-19 12:00:00,2018-03-19 17:00:00
+"153","Modeling and Treatment of Surveillance Flu Data",10,-1,"Poster",2018-03-19 12:00:00,2018-03-19 17:00:00
+"154","Modelling the Effects of Memory on Bumblebee Pollination Services",10,-1,"Poster",2018-03-19 12:00:00,2018-03-19 17:00:00
+"155","On Identifiability of Regression Models with Interactions",10,-1,"Poster",2018-03-19 12:00:00,2018-03-19 17:00:00
+"156","Sensitivity to Model Misspecification of a Von Bertalanffy Growth Model with Measurement Error in Age",10,-1,"Poster",2018-03-19 12:00:00,2018-03-19 17:00:00
+"157","Spatial Mixed Model for Binary Response with an Application to Single Low-Density Lipoprotein Dyslipidemia",10,-1,"Poster",2018-03-19 12:00:00,2018-03-19 17:00:00
+"158","Stop Signal Reaction Time: A New Weighted Frequentist Estimation Method",10,-1,"Poster",2018-03-19 12:00:00,2018-03-19 17:00:00
+"159","The Family of Chi-square Copulas and Applications in Spatial Statistics",1,16,"Invited",2018-03-19 13:30:00,2018-03-19 13:52:00
+"160","Hierarchical Models for Combining N-of-1 Trials",2,7,"Student",2018-03-19 13:30:00,2018-03-19 13:52:00
+"161","A Relational Model for Predicting Farm-Level Crop Yield Distributions in the Absence of Farm-Level Data",3,2,"Student",2018-03-19 13:30:00,2018-03-19 13:52:00
+"162","A Bayesian HSROC Model for Network Meta-analysis of Diagnostic Tests",4,17,"Student",2018-03-19 13:30:00,2018-03-19 13:52:00
+"163","Functional Central Limit Theorems for Self-Normalized Processes with Statistical Applications",5,25,"Student",2018-03-19 13:30:00,2018-03-19 13:52:00
+"164","Spatially Structured Sparseness in Bayesian Spatial Health Modeling",6,10,"Invited",2018-03-19 13:30:00,2018-03-19 13:52:00
+"165","Bayesian Adaptive Designs for Efficient Drug Development and Precision Oncology",7,33,"Invited",2018-03-19 13:30:00,2018-03-19 13:52:00
+"166","Panel discussion",8,-2,"Invited",2018-03-19 13:30:00,2018-03-19 13:52:00
+"167","Efficient Conversion Probability Estimator for Display Advertising",1,16,"Contributed",2018-03-19 13:52:00,2018-03-19 14:14:00
+"168","Correcting False Discovery Rates for their Bias Toward False Positives",2,7,"Invited",2018-03-19 13:52:00,2018-03-19 14:14:00
+"169","Practical Testing",3,2,"Invited",2018-03-19 13:52:00,2018-03-19 14:14:00
+"170","Validation of Codes and Algorithms are an Essential Part of Research Using Routinely Collected Health Data",4,17,"Invited",2018-03-19 13:52:00,2018-03-19 14:14:00
+"171","A Combined Estimating Function Approach to Count Data Regression Modeling",5,25,"Invited",2018-03-19 13:52:00,2018-03-19 14:14:00
+"172","A Potts Mixture Spatiotemporal Joint Model for Combined MEG and EEG Data",6,10,"Invited",2018-03-19 13:52:00,2018-03-19 14:14:00
+"173","Expanding the Predictive Ability of an Interpretable Tree",7,33,"Invited",2018-03-19 13:52:00,2018-03-19 14:14:00
+"174","Industrial Quality Improvement Workshops and Applications",8,-2,"Invited",2018-03-19 13:52:00,2018-03-19 14:14:00
+"175","The Status of Statistics Curricula in Canada",1,16,"Contributed",2018-03-19 14:14:00,2018-03-19 14:36:00
+"176","Mapping Complex Traits, Rare Variants and Interaction via the Coalescent Process with Recombination ",2,7,"Invited",2018-03-19 14:14:00,2018-03-19 14:36:00
+"177","Discordance in Hormone Receptor Status Between Two Primary Breast Cancers: The Impact of Misclassification",3,2,"Invited",2018-03-19 14:14:00,2018-03-19 14:36:00
+"178","Full-Range Tail Dependence Copulas",4,17,"Invited",2018-03-19 14:14:00,2018-03-19 14:36:00
+"179","Self-Normalized Partial Sums of Randomly Weighted Data",5,25,"Invited",2018-03-19 14:14:00,2018-03-19 14:36:00
+"180","Spatial Modeling of Repeated Events: An Application to Disease Mapping",6,10,"Contributed",2018-03-19 14:14:00,2018-03-19 14:36:00
+"181","Development of Quality Assurance Program for Jaundice Meter Management",7,33,"Contributed",2018-03-19 14:14:00,2018-03-19 14:36:00
+"182","Panel discussion",8,-2,"Invited",2018-03-19 14:14:00,2018-03-19 14:36:00
+"183","Piecewise Linear Quantile Regression for Estimation of Ecological Breakpoints",1,16,"Contributed",2018-03-19 14:36:00,2018-03-19 14:58:00
+"184","Measurement and Association Testing of 5-hydroxymethylcytosine (5hmC) Methylation",2,7,"Contributed",2018-03-19 14:36:00,2018-03-19 14:58:00
+"185","Quantile Regression with Nominated Samples",3,2,"Contributed",2018-03-19 14:36:00,2018-03-19 14:58:00
+"186","Ordinal Regression for the Analysis of Health Utility Data",4,17,"Contributed",2018-03-19 14:36:00,2018-03-19 14:58:00
+"187","Box-Cox Time Series",5,25,"Contributed",2018-03-19 14:36:00,2018-03-19 14:58:00
+"188","Superfast Inference for Stationary Gaussian Processes",6,10,"Contributed",2018-03-19 14:36:00,2018-03-19 14:58:00
+"189","Panel discussion",8,-2,"Invited",2018-03-19 14:36:00,2018-03-19 14:58:00
+"190","Tall Tales vs Tall Tails: Rules of Thumb for Statistical Inference",1,16,"Contributed",2018-03-19 15:30:00,2018-03-19 15:52:00
+"191","A Robust Allele-based Regression Framework for Testing Association and Hardy-Weinberg Equilibrium",2,7,"Contributed",2018-03-19 15:30:00,2018-03-19 15:52:00
+"192","Incorporating Auxiliary Information by Joint Modelling of Pseudo Data and Length Biased Data",3,2,"Contributed",2018-03-19 15:30:00,2018-03-19 15:52:00
+"193","A Latent Gaussian Mixture Model for Longitudinal Data",4,17,"Contributed",2018-03-19 15:30:00,2018-03-19 15:52:00
+"194","Modeling the Random Effects Covariance Matrix for Longitudinal Data with Covariate Measurement Error",5,25,"Contributed",2018-03-19 15:30:00,2018-03-19 15:52:00
+"195","A Probabilistic-Based Approach for Clustering Sparse Single-Cell DNA Methylation Data",6,12,"Student",2018-03-19 15:30:00,2018-03-19 15:52:00
+"196","Importance Sampling Techniques for Single Index Models",7,35,"Contributed",2018-03-19 15:30:00,2018-03-19 15:52:00
+"197","Use of the Segmented Regression Analysis Approach to Adjust for Potential Confounders and Effect Modifiers when Evaluating Public Health Interventions",2,7,"Contributed",2018-03-19 15:52:00,2018-03-19 16:14:00
+"198","Statistical Modelling of Spot Fires in Forest Fire Control",3,2,"Contributed",2018-03-19 15:52:00,2018-03-19 16:14:00
+"199","Tail Empirical Processes for Stochastic Volatility Models",4,17,"Contributed",2018-03-19 15:52:00,2018-03-19 16:14:00
+"200","Towards More Reliable Neuroimaging-Based Biomarkers in Mental Illness: The Case of Schizophrenia Discrimination using fMRI Data",6,12,"Invited",2018-03-19 15:52:00,2018-03-19 16:14:00
+"201","Realizing the Extremes: Estimation of Tail-Risk Measures from a High-Frequency Perspective",7,35,"Contributed",2018-03-19 15:52:00,2018-03-19 16:14:00
+"202","A Comparison of Association Methods for Fine-Mapping from Sequence Data in Diploid Populations using the Case-Control Study Design",2,7,"Contributed",2018-03-19 16:14:00,2018-03-19 16:36:00
+"203","Conditional Dependence Models under Covariate Measurement Error",3,2,"Contributed",2018-03-19 16:14:00,2018-03-19 16:36:00
+"204","Kernel-Based Causal Inference",4,17,"Contributed",2018-03-19 16:14:00,2018-03-19 16:36:00
+"205","A Nonparametric Test for Detecting Periodicity in Time Series",6,12,"Contributed",2018-03-19 16:14:00,2018-03-19 16:36:00
+"206","Modeling Recurrent Gap times Through Conditional GEE",7,35,"Contributed",2018-03-19 16:14:00,2018-03-19 16:36:00
+"207","Estimation and Classification for Finite Mixture Models with Order Statistics",2,7,"Contributed",2018-03-19 16:36:00,2018-03-19 16:58:00
+"208","Minimum Profile Hellinger Distance Estimation for Two-Class Location Models",3,2,"Contributed",2018-03-19 16:36:00,2018-03-19 16:58:00
+"209","Statistical Modelling of Carbon Dioxide Flux Data",6,12,"Contributed",2018-03-19 16:36:00,2018-03-19 16:58:00
+"210","Classical and Modern Multivariate Statistical Analysis",1,-1,"Keynote",2018-03-20 08:40:00,2018-03-20 09:01:00
+"211","Analysis of Cluster-Randomized Trials with a Longitudinal Outcome Subject to Irregular Observation",1,3,"Student",2018-03-20 09:01:00,2018-03-20 09:22:00
+"212","Computational Neuroscience: A Romance of Many Disciplines",2,7,"Contributed",2018-03-20 09:01:00,2018-03-20 09:22:00
+"213","Aspects of Genetic Meta-Analysis under Data Uncertainty",3,5,"Invited",2018-03-20 09:01:00,2018-03-20 09:22:00
+"214","Model-Robust Designs for Generalized Linear Mixed Models with Possible Misspecification",4,24,"Invited",2018-03-20 09:01:00,2018-03-20 09:22:00
+"215","Estimation and Inference in Directional Mixed Models for Compositional Data",5,29,"Student",2018-03-20 09:01:00,2018-03-20 09:22:00
+"216","Job Vacancy and Wage Survey: Balancing Sampling and Operational Requirements using the Cube Method",6,20,"Contributed",2018-03-20 09:01:00,2018-03-20 09:22:00
+"217","Risk Measures Related to both the Information of an Individual Risk and Industry Risk",7,37,"Invited",2018-03-20 09:01:00,2018-03-20 09:22:00
+"218","Observational Analyses of Cluster-Randomized Trials",1,3,"Invited",2018-03-20 09:22:00,2018-03-20 09:43:00
+"219","Gene Set Enrichment Analysis in Longitudinal Studies",2,7,"Contributed",2018-03-20 09:22:00,2018-03-20 09:43:00
+"220","Robust Hierarchical Bayes Small Area Estimation for Nested Error Regression Model",3,5,"Invited",2018-03-20 09:22:00,2018-03-20 09:43:00
+"221","Simplified Variance Estimation in Surveys",4,24,"Invited",2018-03-20 09:22:00,2018-03-20 09:43:00
+"222","Inference from Survival Data using Imprecise Probabilities",5,29,"Invited",2018-03-20 09:22:00,2018-03-20 09:43:00
+"223","Response Best Subset Selection Model and Efficient Estimation in Multivariate Linear Regression",6,20,"Contributed",2018-03-20 09:22:00,2018-03-20 09:43:00
+"224","The Power of Simple Statistical Techniques in the Era of Big and Complex Data: Some Recent Examples from Genetic Association Studies",7,37,"Invited",2018-03-20 09:22:00,2018-03-20 09:43:00
+"225","G-estimation and Model Selection for Dynamic Treatment Regimes",1,3,"Invited",2018-03-20 09:43:00,2018-03-20 10:04:00
+"226","An Ancestral Tree-Based Approach to Detect Rare and Common Variants",3,5,"Invited",2018-03-20 09:43:00,2018-03-20 10:04:00
+"227","A Doubly Robust Estimator for Indirectly Standardized Mortality Ratios",4,24,"Contributed",2018-03-20 09:43:00,2018-03-20 10:04:00
+"228","Small Area Model Selection",5,29,"Invited",2018-03-20 09:43:00,2018-03-20 10:04:00
+"229","Analysis of Recurrent Events with Dynamic Models for Dependent Gap Times: A Copula Approach",6,20,"Contributed",2018-03-20 09:43:00,2018-03-20 10:04:00
+"230","Improving Risk Assessment using Market Expectations and Information from Model Risks",7,37,"Invited",2018-03-20 09:43:00,2018-03-20 10:04:00
+"231","Some Asymptotic Results on Tree-based Survival Models",1,3,"Invited",2018-03-20 10:04:00,2018-03-20 10:25:00
+"232","A Multivariate Rare-Variant Association Test for Non-Normally Distributed Phenotypes",3,5,"Contributed",2018-03-20 10:04:00,2018-03-20 10:25:00
+"233","Clustering of Functional Data using Mixture Model-Based Clustering",4,24,"Contributed",2018-03-20 10:04:00,2018-03-20 10:25:00
+"234","Causal Inference from Big Data: Theoretical Foundations and the Data-Fusion Problem",5,29,"Invited",2018-03-20 10:04:00,2018-03-20 10:25:00
+"235","Multivariate Response-Dependent Two-Phase Sampling Designs",6,20,"Contributed",2018-03-20 10:04:00,2018-03-20 10:25:00
+"236","Statistical Methods for Synthesizing Evidence from Explanatory and Pragmatic trials",1,3,"Invited",2018-03-20 10:25:00,2018-03-20 10:46:00
+"237","Block-Wise Descent Algorithms for Group Variable-selection in Quantile Regression",3,5,"Contributed",2018-03-20 10:25:00,2018-03-20 10:46:00
+"238","Pareto-optimal Reinsurance with Two Constraints under Distortion Risk Measure",4,24,"Contributed",2018-03-20 10:25:00,2018-03-20 10:46:00
+"239","Individual Level Modelling of Infectious Disease Data: EpiILM",5,29,"Contributed",2018-03-20 10:25:00,2018-03-20 10:46:00
+"240","Issues with Inference in Adaptive Optimal Design",1,3,"Invited",2018-03-20 10:46:00,2018-03-20 11:07:00
+"241","Robust Mixture Discriminant Analysis",3,5,"Contributed",2018-03-20 10:46:00,2018-03-20 11:07:00
+"242","Joint Modelling of Count, Continuous and Semi-Continuous Longitudinal Data",4,24,"Contributed",2018-03-20 10:46:00,2018-03-20 11:07:00
+"243","Registry-Based Randomized Controlled Trials: The Case for Explanatory-Pragmatic Continuum",1,3,"Invited",2018-03-20 11:07:00,2018-03-20 11:28:00
+"244","Quantile and Expectile Regression for Random Effects Models",3,5,"Contributed",2018-03-20 11:07:00,2018-03-20 11:28:00
+"245","Parametric Spectral Density Estimation in Atomic Force Microscopy",4,24,"Contributed",2018-03-20 11:07:00,2018-03-20 11:28:00
+"246","Spatio-Temporal Noise Models for the Analysis of Functional Magnetic Resonance Imaging Data",1,3,"Invited",2018-03-20 11:28:00,2018-03-20 11:49:00
+"247","Identifying Expression Quantitative Trait Loci in Genome-Wide Association Studies using Matrix eQTL",3,5,"Contributed",2018-03-20 11:28:00,2018-03-20 11:49:00
+"248","A Bayesian Approach to Diagnosis of the Gaussian Random Field Assumption",1,3,"Contributed",2018-03-20 13:30:00,2018-03-20 13:50:00
+"249","Parametric Functional Principal Component Analysis",2,26,"Invited",2018-03-20 13:30:00,2018-03-20 13:50:00
+"250","Change Point Detection in Functional Time Series Models for Yield Curves",3,11,"Student",2018-03-20 13:30:00,2018-03-20 13:50:00
+"251","From Brain to Hand to Statistics with Dynamic Smoothing",4,22,"Invited",2018-03-20 13:30:00,2018-03-20 13:50:00
+"252","Detecting Adverse Drug Effects from Pharmacovigilance Databases",5,32,"Student",2018-03-20 13:30:00,2018-03-20 13:50:00
+"253","Gosset at Guinness: How ‘Student’ Derived (and Checked) the Distribution of his z-statistic",6,23,"Student",2018-03-20 13:30:00,2018-03-20 13:50:00
+"254","A Hierarchical Credibility Approach to Modeling Mortality Rates for Multiple Populations",7,38,"Invited",2018-03-20 13:30:00,2018-03-20 13:50:00
+"255","Geo-Dependent Individual-Level Models for Infectious Diseases Transmission",1,3,"Contributed",2018-03-20 13:50:00,2018-03-20 14:10:00
+"256","On the Bayesian Semi-Parametric Double Robustness Property",2,26,"Invited",2018-03-20 13:50:00,2018-03-20 14:10:00
+"257","Continuous Models for Aggregated Spatio-Temporal Data in Practice",3,11,"Student",2018-03-20 13:50:00,2018-03-20 14:10:00
+"258","Dynamic Treatment Regimes via Reward Ignorant Modelling",4,22,"Invited",2018-03-20 13:50:00,2018-03-20 14:10:00
+"259","Incorporating Contact Network Uncertainty in Individual-Level Models of Infectious Disease using Approximate Bayesian Computation",5,32,"Contributed",2018-03-20 13:50:00,2018-03-20 14:10:00
+"260","Approximations to Facilitate Data Assimilation for High Dimensional Dynamical Systems",6,23,"Student",2018-03-20 13:50:00,2018-03-20 14:10:00
+"261","Copula Dependence Modeling for Multi-type Recurrent Events using Composite Likelihood",7,38,"Contributed",2018-03-20 13:50:00,2018-03-20 14:10:00
+"262","A New Weighted Quantile Regression",1,3,"Contributed",2018-03-20 14:10:00,2018-03-20 14:30:00
+"263","Scalar on Image Regression with Application to Multiple Sclerosis MRI Lesion Data.",2,26,"Invited",2018-03-20 14:10:00,2018-03-20 14:30:00
+"264","Generative Mixture of Networks",3,11,"Invited",2018-03-20 14:10:00,2018-03-20 14:30:00
+"265","Segmenting the Canadian Population to Remedy Non-Response in Statistics Canada Household Surveys",4,22,"Contributed",2018-03-20 14:10:00,2018-03-20 14:30:00
+"266","Trajectory Modeling of Gestational Weight: a Functional Principal Component Analysis Approach",5,32,"Contributed",2018-03-20 14:10:00,2018-03-20 14:30:00
+"267","Innovations in Sampling for Insecure and Data-Poor Environments",6,23,"Invited",2018-03-20 14:10:00,2018-03-20 14:30:00
+"268","Modelling Bivariate Count Time Series with Extra Zeros",7,38,"Contributed",2018-03-20 14:10:00,2018-03-20 14:30:00
+"269","Dependent Models for the Duration and Size of BC Fires",1,3,"Contributed",2018-03-20 14:30:00,2018-03-20 14:50:00
+"270","Combatting Overfitting in Finite Mixture Models",2,26,"Contributed",2018-03-20 14:30:00,2018-03-20 14:50:00
+"271","How to Brew your Beer Tour with Data Science",3,11,"Invited",2018-03-20 14:30:00,2018-03-20 14:50:00
+"272","A Comparison of Mixture Modeling Approaches for Clustering Longitudinal Binary Data",4,22,"Contributed",2018-03-20 14:30:00,2018-03-20 14:50:00
+"273","Estimation and Identification of Varying-Coefficient Additive Models for Locally Stationary Process",5,32,"Contributed",2018-03-20 14:30:00,2018-03-20 14:50:00
+"274","Common-Factor Multivariate Stochastic Volatility Modeling with Observable Proxy",6,23,"Contributed",2018-03-20 14:30:00,2018-03-20 14:50:00
+"275","Mode Detection in a Non-Stationary Environment",2,26,"Contributed",2018-03-20 14:50:00,2018-03-20 15:10:00
+"276","Nonparametric Estimation in a Compound Mixture Model with Application to a Malaria Study",3,11,"Contributed",2018-03-20 14:50:00,2018-03-20 15:10:00
+"277","Combining Multiple Samples through Density Ratio Models for More Efficient Estimation",4,22,"Contributed",2018-03-20 14:50:00,2018-03-20 15:10:00
+"278","Predicting the Unpredictable: Severe Wildfire Risk Prediction in Canada",5,32,"Contributed",2018-03-20 14:50:00,2018-03-20 15:10:00
+"279","Localized Quantile Regression of Realized Volatility",2,26,"Contributed",2018-03-20 15:10:00,2018-03-20 15:30:00
+"280","Calibration of Measurements: An Extension of Classic Measurement Error Theory",3,11,"Contributed",2018-03-20 15:10:00,2018-03-20 15:30:00
+"281","Parameter Estimation for PDEs Defined over Irregular Domains",4,22,"Contributed",2018-03-20 15:10:00,2018-03-20 15:30:00
+"282","Deflation Risk and Implications for Life Insurers",2,26,"Contributed",2018-03-20 15:30:00,2018-03-20 15:50:00
+"283","Benefits of Transformations in the Analysis of Health Utility Data",3,11,"Contributed",2018-03-20 15:30:00,2018-03-20 15:50:00
+"284","A Unified Empirical Likelihood Approach to Testing MCAR and Subsequent Estimation",2,26,"Contributed",2018-03-20 15:50:00,2018-03-20 16:10:00
+"285","Causal Inference with Measurement Error in Outcomes: Bias Analysis and Estimation Methods",3,11,"Contributed",2018-03-20 15:50:00,2018-03-20 16:10:00
+"286","Component Selection and Estimation for Functional Semiparametric Additive Model",2,26,"Contributed",2018-03-20 16:10:00,2018-03-20 16:30:00
