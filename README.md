@@ -1,15 +1,15 @@
 # Statistical-Consulting
-STAT 400 Project in Statistical Communication and Consulting
+STAT 400/DATA 500 Project in Statistical Communication and Consulting
 
 # Dependencies
 For everything:
 Python 2.7
 
 Python libraries:
-gensim
-nltk
-stopwords
-numpy
+gensim,
+nltk,
+stopwords,
+numpy,
 pyemd
 
 Just for InferSent:
@@ -28,20 +28,21 @@ Output is written to data/conference.csv
 Unit tests for this component can be ran by `python -m unittest tests.data_extraction`
 
 # Abstract Text Analysis Process:
-1.	DocSim: Navigate to /src/data_analysis/pythonCode/ and run the command:
-DocSim.py -i "../../../data/conference.csv" -c 2
-2.	Doc2Vec_pretrained 1: Navigate to /src/data_analysis/pythonCode/ and run the command:
-Doc2Vec_pretrained.py -i "../../../data/conference.csv" -c 2 –m "../languageModels/apnews_doc2vec.bin"
-3.	Doc2Vec_pretrained 2: Navigate to /src/data_analysis/pythonCode/ and run the command:
-Doc2Vec_pretrained.py -i "../../../data/conference.csv" -c 2 –m "../languageModels/enwiki_doc2vec.bin"
-4.	Doc2Vec_selfTrained: Navigate to /src/data_analysis/pythonCode/ and run the command:
-Doc2Vec_selfTrained.py -i "../../../data/conference.csv" -c 2
-5.	WMD: Navigate to /src/data_analysis/pythonCode/ and run the command:
-WMD.py -i "../../../data/conference.csv" -c 2 –m "../languageModels/WMD_model_withGoogleNews_W2V.bin"
+1.	DocSim: Navigate to data_analysis/pythonCode/ and run the command:
+`python DocSim.py -i "../../data/conference.csv" -c 2`
+2.	Doc2Vec_pretrained 1: Navigate to data_analysis/pythonCode/ and run the command:
+`python Doc2Vec_pretrained.py -i "../../data/conference.csv" -c 2 –m "../languageModels/apnews_doc2vec.bin"`
+3.	Doc2Vec_pretrained 2: Navigate to data_analysis/pythonCode/ and run the command:
+`python Doc2Vec_pretrained.py -i "../../data/conference.csv" -c 2 –m "../languageModels/enwiki_doc2vec.bin"`
+4.	Doc2Vec_selfTrained: Navigate to data_analysis/pythonCode/ and run the command:
+`python Doc2Vec_selfTrained.py -i "../../data/conference.csv" -c 2`
+5.	WMD: Navigate to data_analysis/pythonCode/ and run the command:
+`python WMD.py -i "../../data/conference.csv" -c 2 –m "../languageModels/WMD_model_withGoogleNews_W2V.bin"`
 6.	InferSent (Only running on Linux or OSX, because of library limitations (i.e.: pytorch)):
-a.	Go inside /src/data_analysis/pythonCode/InferSent/encoder and unzip the glove.840B.300d.zip file.
-b.	Run main.py inside the InferSent folder from a Linux or OSX operating system, after pytorch was configured. Adjust file path inside main.py, if needed.
+  a.	Go inside data_analysis/pythonCode/InferSent/encoder and unzip the glove.840B.300d.zip file.
+  b.	Run main.py inside the InferSent folder from a Linux or OSX operating system, after pytorch was configured. Adjust file path inside main.py, if needed.
 
+Unit tests for this component can be ran by navigating to data_analysis/pythonCode/ and run the command : `python UnitTests.py`
 
 # Abstract Clustering Process:
 1.	Set R working directory to the root directory of this project’s directory, i.e. SSC Consulting, so for example run the R command “setwd("C:/Users/Norbert/Desktop/SSC consulting")”.
