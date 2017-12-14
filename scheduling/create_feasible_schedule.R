@@ -37,25 +37,20 @@ assign_panel_discussion<-function(conference)
   selected_class<-sqldf('select class,count(maintt) as cm from conference where maintt>0 group by class order by cm asc')
   selected_maintt<-sqldf(paste(paste('select distinct maintt from conference where maintt>0 and maintt not in(select maintt from conference where maintt>0 and class=',selected_class$class[1]),
                                ') order by maintt asc'))
-  
-  conference$subtt[conference$maintt==-2]<-sample(count_speakers)
   count_speakers<-length(conference$maintt[conference$maintt==-2])
   
-  if(length(selected_maintt$maintt)>0)
-  {
+  conference$subtt[conference$maintt==-2]<-sample(count_speakers)
+  if(length(selected_maintt$maintt)>0){
     conference$class[conference$maintt==-2]<-selected_class$class[1]
     conference$maintt[conference$maintt==-2]<-selected_maintt$maintt[1]
   }
-  else
-  {
-    if(numclasses-length(selected_class$class)>0)
-    {
+  else{
+    if(numclasses-length(selected_class$class)>0){
       selected_class<-selected_class$class[1]+1
       conference$class[conference$maintt==-2]<-selected_class
       conference$maintt[conference$maintt==-2]<-2
     }
-    else
-    {
+    else{
       warning('Panel discussion cannot be scheduled!')
     }
   }
