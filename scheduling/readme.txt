@@ -1,3 +1,16 @@
+#Solving the scheduling problem using Greedy algorithm.
+
+#   * MIT License --
+#   *
+#   * Permission is hereby granted to any person obtaining
+# * a copy of this software and associated documentation files ("report","readme"), to deal in the Software without restriction, including
+# * without limitation the rights to use, copy, modify, merge, publish,
+# * distribute, sublicense, and/or sell copies of the Software:
+#   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+# * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+# * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+# * NONINFRINGEMENT.
+
 Creating the schedule and exporting it as csv google calendar is fairly easy and straightforward. You only need to run the main.R in your R studio. If it is the first time running the main.R, you need to uncomment three lines:
 1- Setting the current working directory (the directory that you copied your R file):
 setwd('F:/SVN/DATA 500/Project 3/Final version/')
