@@ -1,5 +1,22 @@
+# * 
+# * @author Mahdi Aziz
+# * @date 2017-12-14
+# *mahdi.aziz.tls@gmail.com
+# *
+#   * Solving the scheduling problem using Greedy algorithm.
+# *
+#   * MIT License --
+#   *
+#   * Permission is hereby granted to any person obtaining
+# * a copy of this software and associated documentation files ("report","readme"), to deal in the Software without restriction, including
+# * without limitation the rights to use, copy, modify, merge, publish,
+# * distribute, sublicense, and/or sell copies of the Software:
+#   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+# * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+# * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+# * NONINFRINGEMENT.
 
-######### run these three lines -only for once
+######### run these three lines below once
 #setwd('F:/SVN/DATA 500/Project 3/Final version/')# define the directory of the project
 #install.packages('sqldf')
 #install.packages('lubridate')
@@ -8,7 +25,10 @@ library(lubridate)
 library('sqldf')
 
 #determines the cluster type that has used for clustering the talks
-type<-6
+type<-1
+
+if(type<1 ||type>6)
+  stop('We only have 6 clustering methods-- please a value between 1 to 6 for type')
 
 # greedy_input_variables defines sessions and rooms 
 source('greedy_input_variables.R')
@@ -34,7 +54,7 @@ conference<-assign_poster_speakers(conference)
 # Setting fullCluster as the cluster number and Cluster size
 fullcluster<-sqldf('select Cluster,Count(Cluster) as CC from conference where Cluster>0 group by Cluster order by CC desc')
 
-# define the inavailability matrix having the inavailability times for speakers
+# define the inavailability matrix having the inavailability times for speakers, if any
 Aprim<-matrix(list(), nrow=length(conference$Abstract), ncol=24)
 #Aprim[[1,1]] <- "2,3"
 #Aprim[[1,2]]<-"3,1"
